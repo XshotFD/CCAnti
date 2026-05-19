@@ -24,9 +24,18 @@ Pada modul ini, kita menggunakan **Docker** untuk membungkus (containerize) apli
 * Koneksi internet stabil.
 
 ### D. Arsitektur Sistem
+Sistem yang dibangun memiliki spesifikasi aplikasi dan infrastruktur sebagai berikut:
+
+**D.1. Arsitektur Aplikasi**
+Proyek aplikasi Sistem Informasi Jadwal Kuliah yang akan di-deploy harus terdiri dari tiga komponen utama:
+1. **Front End:** Antarmuka pengguna (user interface) untuk interaksi sistem.
+2. **Back End:** Layanan server (API) untuk pemrosesan logika bisnis aplikasi.
+3. **Database:** Basis data untuk penyimpanan informasi jadwal kuliah secara persisten.
+
+**D.2. Arsitektur Infrastruktur**
 Pada praktikum ini, kita akan meluncurkan **dua EC2 Instances**:
 1. **Ansible Controller:** Mesin yang digunakan untuk mengontrol dan mengirimkan perintah otomatisasi.
-2. **Docker Host:** Mesin target yang akan diinstal Docker dan tempat aplikasi Jadwal Kuliah berjalan.
+2. **Docker Host:** Mesin target yang akan diinstal Docker dan tempat seluruh komponen aplikasi Jadwal Kuliah berjalan (sebagai container).
 
 ---
 
