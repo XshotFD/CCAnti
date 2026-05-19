@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Jadwal Kuliah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jadwal Kuliah</h1>
+            <p>Sistem Informasi Akademik Berbasis Cloud</p>
+        </header>
+
+        <main>
+            <div id="loader" class="loader"></div>
+            <div id="error-message" class="error-message" style="display: none;"></div>
+            
+            <div class="table-container">
+                <table id="jadwal-table" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>Mata Kuliah</th>
+                            <th>Dosen</th>
+                            <th>Ruangan</th>
+                            <th>Waktu</th>
+                        </tr>
+                    </thead>
+                    <tbody id="jadwal-body">
+                        <!-- Data will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
