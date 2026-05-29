@@ -363,6 +363,24 @@ Agar semua komponen di atas dapat saling berkomunikasi di dalam server Docker Ho
     db_data:
   ```
 
+#### E.5. Menjalankan Aplikasi Secara Lokal (Opsional)
+Jika kamu ingin menjalankan dan menguji aplikasi ini langsung di komputer/laptopmu tanpa harus menggunakan server AWS, kamu bisa melakukannya dengan mudah asalkan **Docker Desktop** atau **Docker Compose** sudah terinstal di komputermu.
+
+1. Buka Terminal atau Command Prompt / PowerShell.
+2. Masuk ke direktori `aplikasi` di mana file `docker-compose.yml` berada:
+   ```bash
+   cd aplikasi
+   ```
+3. Jalankan perintah berikut untuk membangun dan menjalankan semua komponen (Frontend, Backend, dan Database) di latar belakang:
+   ```bash
+   docker compose up -d --build
+   ```
+4. Tunggu beberapa saat hingga database siap, lalu buka browser dan akses `http://localhost`. Kamu akan melihat halaman website jadwal kuliah berjalan di komputermu sendiri!
+5. Untuk mematikan aplikasi, jalankan:
+   ```bash
+   docker compose down
+   ```
+
 ---
 
 ### F. Persiapan Infrastruktur AWS (EC2)
